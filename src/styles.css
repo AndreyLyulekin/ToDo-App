@@ -1,0 +1,70 @@
+/** {
+    outline: 1px solid red;
+}*/
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.addListForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+.inputToAddList {
+    width: 250px;
+    height: 25px;
+    border-radius: 10px;
+
+}
+
+.addListBtnSave {
+    width: 50px;
+    height: 35px;
+    background-color: chartreuse;
+    border-radius: 10px;
+}
+
+
+/*list*/
+
+
+.tasks {
+    background-color: white;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.oneTask {
+    background-color: yellowgreen;
+    min-width: 450px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.taskDoneBtn {
+    background-color: chartreuse;
+    border-radius: 10px;
+}

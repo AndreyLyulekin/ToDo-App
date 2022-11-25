@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title lang="ru">Mesto Russia</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <div class='main'>
+        <div class='root'>
+            <form class='addListForm'>
+                <input class="inputToAddList" placeholder="Text a new task">
+                <button class='addListBtnSave'>Save</button>
+            </form>
+            <ul class="tasks">
+                <li class="oneTask">MaybeBaybe <button class='taskDoneBtn'>Done</button></li>
+                <li class="oneTask">MaybeBaybe#2 <button class='taskDoneBtn'>Done</button></li>
+            </ul>
+        </div>
+    </div>
+    <template id="addOneTask">
+        <ul class="tasks">
+            <li class="oneTask">MaybeBaybe <button class='taskDoneBtn'>Done</button></li>
+        </ul>
+    </template>
+    <script src="src/index.js"></script>
+</body>
+</html>
