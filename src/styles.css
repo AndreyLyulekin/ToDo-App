@@ -1,70 +1,101 @@
-/** {
-    outline: 1px solid red;
-}*/
-
-
-
 body {
-    font-family: sans-serif;
-    background-color: black;
+    background-color: green;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
 }
 
-.main {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.addTaskForm {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
     flex-direction: column;
-}
-
-.addListForm {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    border-radius: 10px;
-    border: 1px solid red;
+    gap: 5px;
 }
 
 .inputToAddList {
-    width: 250px;
-    height: 25px;
+    width: 400px;
+    height: 36px;
     border-radius: 10px;
-
+    font-size: 18px;
+    border: none;
 }
-
-.addListBtnSave {
-    width: 50px;
-    height: 35px;
-    background-color: chartreuse;
-    border-radius: 10px;
-}
-
-
-/*list*/
-
-
-.tasks {
-    background-color: white;
-    width: 500px;
+.form__buttons{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    min-height: 80vh;
     gap: 10px;
+}
+.formBtn {
+    height: 55px;
+    width: 75px;
+    background-color: greenyellow;
     border-radius: 10px;
 }
+.removeListBtnSave{
+    background-color: indianred;
+}
 
-.oneTask {
-    background-color: yellowgreen;
-    min-width: 450px;
-    height: 45px;
+/*tasks*/
+
+.allTasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.oneCard {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    background-color: yellow;
     border-radius: 10px;
-    padding: 5px;
+    height: 200px;
+    margin-top: 50px;
 }
 
-.taskDoneBtn {
-    background-color: chartreuse;
-    border-radius: 10px;
+.taskAllText {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.titleTask {
+    height: 50px;
+    font-size: 45px;
+    margin: 0;
+    max-width: 400px;
+    padding-left: 5px;
+}
+
+.subtitleTask {
+    height: 30px;
+    font-size: 25px;
+    margin: 0;
+    max-width: 400px;
+    padding-left: 5px;
+}
+
+.textTask {
+    height: 115px;
+    font-size: 25px;
+    margin: 0;
+    max-width: 400px;
+    padding-left: 5px;
+}
+
+.settingsTask {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    justify-content: space-evenly;
 }
