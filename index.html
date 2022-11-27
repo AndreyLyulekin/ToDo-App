@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title lang="ru">Mesto Russia</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./src/styles.css">
 </head>
+
 <body>
-    <div class='main'>
-        <div class='root'>
-            <form class='addListForm'>
-                <input class="inputToAddList" placeholder="Text a new task">
-                <button class='addListBtnSave'>Save</button>
+    <header class='header'>
+        <section class='addTask'>
+            <form class='addTaskForm'>
+                <div class='inputs'>
+                    <input class="inputToAddList task__input_title" name='title' placeholder="Text a task title">
+                    <input class="inputToAddList task__input_subtitle" name='subtitle' placeholder="Text a task subtitle">
+                    <input class="inputToAddList task__input_text" name='text' placeholder="Text a task description">
+                </div>
+                <div class="form__buttons">
+                    <button class='addListBtnSave formBtn' type='submit'>Save</button>
+                    <button class='removeListBtnSave formBtn'>Remove</button>
+                </div>
             </form>
-            <ul class="tasks">
-                <li class="oneTask">MaybeBaybe <button class='taskDoneBtn'>Done</button></li>
-                <li class="oneTask">MaybeBaybe#2 <button class='taskDoneBtn'>Done</button></li>
-            </ul>
-        </div>
-    </div>
+        </section>
+    </header>
+    <section class="allTasks">
+    </section>
     <template id="addOneTask">
-        <ul class="tasks">
-            <li class="oneTask">MaybeBaybe <button class='taskDoneBtn'>Done</button></li>
-        </ul>
+        <div class='oneCard'>
+            <div class='taskAllText'>
+                <h1 class='titleTask'></h1>
+                <h4 class='subtitleTask'></h3>
+                    <span class='textTask'></span>
+            </div>
+            <div class='settingsTask'>
+                <button class='deleteToArchieve'>Delete</button>
+                <span class='descriptionToBtnSave'>Done:<input type="radio" class='taskDoneBtn'></span>
+            </div>
+        </div>
     </template>
-    <script src="src/index.js"></script>
+    <script src="./src/index.js"></script>
 </body>
+
 </html>
